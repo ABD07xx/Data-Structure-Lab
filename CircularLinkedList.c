@@ -50,11 +50,13 @@ void create(){
 }
 
 void view(){
+	int flag=0;
 		struct node*t;
  	t=head;
- 	while(t->next!=head)
+ 	while(t->next!=head || flag = 1)
  	{
  		printf("%d\t",t->data);
+		flag=1;
  		t=t->next;
 	}
 	printf("\n");
